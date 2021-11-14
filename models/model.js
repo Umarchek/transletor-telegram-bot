@@ -1,6 +1,8 @@
 const Schema = require('mongoose').Schema
-const client = require('./mongo')
-
+const mongoose = require('mongoose')
+async function client() {
+    return await mongoose.connect('mongodb://localhost/tranlator')
+}
 const UserSchema = new Schema({
     chat_id: {
         type: Number,
