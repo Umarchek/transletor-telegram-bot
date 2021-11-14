@@ -1,11 +1,16 @@
 const TelegramBot = require('node-telegram-bot-api')
-const TOKEN = "2137017839:AAF_LjKwvHyAcCJ7kSmvoQXVI1a7gfBJNOE"
+const TOKEN = "****"
+const mongoose = require('mongoose')
+const translate = require('@vitalets/google-translate-api')
+const { findUser, createUser, setText } = require('./models/model')
 
+
+async function client() {
+    return await mongoose.connect('mongodb://localhost/tranlator')
+}
 const bot = new TelegramBot(TOKEN, {
     polling: true
 })
-const translate = require('@vitalets/google-translate-api')
-const { findUser, createUser, setText } = require('./model')
 
 bot.on('message', async (message) => {
     const chat_id = message.chat.id
