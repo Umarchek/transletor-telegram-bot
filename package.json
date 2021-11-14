@@ -1,0 +1,19 @@
+{
+  "name": "transletor-telegram-bot",
+  "version": "1.0.0",
+  "description": "bu bot sizga kerakli bo'lgan so'zni 4ta tilda tarjima qilib beraoladi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UZBase/transletor-telegram-bot.git"
+  },
+  "author": "Umarjon Sharofiddinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UZBase/transletor-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/UZBase/transletor-telegram-bot#readme"
+}
